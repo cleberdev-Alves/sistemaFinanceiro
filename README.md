@@ -59,6 +59,81 @@ _______________________________________________________
 ```
 ---
 
+# Modelagem de dados
+
+```text
+|USUARIO
+--------
+    |id
+    |Nome
+    |CPF
+    |Email
+    |Telefone
+    |Senha
+
+    
+|DESPESAS
+--------
+    |usuarioId
+    |id
+    |vencimento
+    |categoria
+    |descrição
+    |valor
+    |tipo
+    |observação
+
+|INVESTIMENTO
+--------
+    |usuarioId
+    |id
+    |descrição
+    |tipo
+    |data
+    |valor inicial
+    |valor atual
+    |rendimento
+
+|META
+--------
+    |usuarioId
+    |id
+    |descrição
+    |limite maximo de gasto
+    |valor para investir
+    |prazo(inicio e terminio)
+    
+|PATRIMONIO
+--------
+    |usuarioId
+    |id
+    |escrição
+    |tipo
+    |valor
+    |dinheiro
+    
+|RECEITA
+--------
+    |usuarioId
+    |id
+    |discrição
+    |tipo
+    |data
+    |valor
+
+|BANCO
+--------
+    |usuarioId
+    |id
+    |instituição
+    |Saldo da conta
+
+
+```
+![Modelo do banco](modeloBanco.png)
+
+---
+
 # Desejos do futuro
 
 > Agente de controle e preenchimento pelo whatsapp com IA
